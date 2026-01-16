@@ -7,4 +7,13 @@ public static class GameSignals
 
     public static event Action PickDragEnd;
     public static void RaisePickDragEnd() => PickDragEnd?.Invoke();
+
+    public static event Action PickUpgradeRequested;
+    public static void RaisePickUpgradeRequested() => PickUpgradeRequested?.Invoke();
+    
+    public static event Action TierChanged;
+    public static void RaiseTierChanged() => TierChanged?.Invoke();
+
+    public static event Action LevelChanged;
+    public static void RaiseLevelChanged() => LevelChanged?.Invoke();
 }
