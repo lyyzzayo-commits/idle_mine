@@ -16,8 +16,10 @@ public class BlockDef : ScriptableObject
 
     [Header("Economy")]
     public int baseValue;             // 즉시 판매 시 골드 가치
-    //public DropTableDef dropTable;     // 파괴 시 드랍(선택)
+    public DropTableDef dropTable;     // 파괴 시 드랍(선택)
 
     [Header("Visual")]
     public GameObject blockPrefab;    // 타일/프리팹
+
+
 }
