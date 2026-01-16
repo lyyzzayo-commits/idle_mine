@@ -19,8 +19,9 @@ public class PickManager : MonoBehaviour
             GameSignals.RaiseTierChanged();
 
         progress.level = newLevel;
+        GameSignals.RaiseLevelChanged();
 
-        //pickaxeUnit.ApplyTier(nextTierDef)
+        //pickaxeUnit.ApplyLevel(nextLevelDef)
     }
 
     private PickaxeTierDef FindTierDef(string tierId)
